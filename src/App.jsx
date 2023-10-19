@@ -1,16 +1,21 @@
 import SecondCounter from "./components/SecondCounter";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 const App = () => {
 
+  const [counter, setCounter] = useState(1); 
 
+  useEffect(() => {
+
+    
+    setInterval(() => {
+      setCounter( num => num +1)
+    } , 1000);
+
+  }, [])
   
 
-
-  const [counter, setCounter] = useState( "A" );
-
-
-
+  
   return (
     <>
       <SecondCounter seconds={counter} />
