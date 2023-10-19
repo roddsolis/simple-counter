@@ -1,27 +1,18 @@
 import Number from "/src/components/Number";
+import { LuTimer } from "react-icons/lu";
 
-
-
-const SecondCounter = () => {
-
-
-
-
+const SecondCounter = ({ seconds }) => {
   return (
-        <div className="secondsContainer">
-            
-        <Number />
-        <Number />
-        <Number />
-        <Number />
-        <Number />
-        <Number />
-        <Number numColor="white" numero={0}/>
-
-        </div>
-  )
+    <div className="secondsContainer">
+      <LuTimer />
+      <Number />
+      <Number />
+      <Number />
+      <Number />
+      <Number />
+      <Number numColor="#1ea124;" numero={seconds} />
+    </div>
+  );
 };
-
-
 
 export default SecondCounter;

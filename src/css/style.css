@@ -2,11 +2,12 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    text-rendering: geometricPrecision;
 }
 
 
 body{
-    background-color: #0f0f0f;
+    background-color: #cacaca;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -15,31 +16,39 @@ body{
 
 .numberContainer{
 
-    background: linear-gradient(#242424,#181818);
-    width: 80px;
+    background: linear-gradient(#98ae25,hwb(81 9% 41%));
+    width: 30px;
     height: 80px;
     padding: 1em;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
-    border-radius: 0.3em;
-    border: 1px solid #0e0e0e;
+    color: #1f4347;
+    border-radius: 0.4em;
+    border: 1px solid #ffffff;
     font-size: 2em;
-    font-family: 'Segoe UI';
-    font-weight: 700;
-    box-shadow: inset 0px 0px 8px -1px #131313;
+    font-family: 'Press Start 2P', sans-serif;    font-weight: 700;
+    box-shadow: inset 0px 0px 8px -1px #808717, inset 0px 0px 5px -1px #282b05 ;
 
     
 }
 
 .secondsContainer{
-    background-color: #131313;
-    border-radius: 1em;
-    padding: 0.5em;
+    background: linear-gradient(#eeeeee,#e6e6e6);
+    border-radius: 1.5em;
+    padding: 1em;
     display: flex;
     align-items: center;
     gap: 0.5em;
-    border: 1px solid #1a1a1a;
-    box-shadow: 0px 8px 10px -8px #0a0a0a;
+    border: 1px solid #d8d8d8;
+    box-shadow: 0px 20px 30px -20px #afafaf , inset 0px -10px 5px -10px #acacac, inset 0px 10px 5px -10px #ffffff ;
+    & svg{
+        color: #d3d3d3;
+        width: 80px;
+        height: 50px;
+    }
+}
+
+i {
+    color: white;
 }

@@ -1,12 +1,21 @@
-import SecondCounter from './components/SecondCounter'
-
+import SecondCounter from "./components/SecondCounter";
+import React, { useState } from "react";
 
 const App = () => {
-  return (
-            <>
-            <SecondCounter />
-            </>
-  )
-}
 
-export default App
+
+  
+
+
+  const [counter, setCounter] = useState( "A" );
+
+
+
+  return (
+    <>
+      <SecondCounter seconds={counter} />
+    </>
+  );
+};
+
+export default App;
