@@ -7,7 +7,7 @@
 
 
 body{
-    background-color: #cacaca;
+    background-color: #111111;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -34,16 +34,16 @@ body{
 }
 
 .secondsContainer{
-    background: linear-gradient(#eeeeee,#e6e6e6);
+    background: linear-gradient(#eeeeee 25%,#d3d3d3 80%, #c4c4c4);
     border-radius: 1.5em;
     padding: 1em;
     display: flex;
     align-items: center;
     gap: 0.5em;
-    border: 1px solid #d8d8d8;
-    box-shadow: 0px 20px 30px -20px #afafaf , inset 0px -10px 5px -10px #acacac, inset 0px 10px 5px -10px #ffffff ;
+    border: 1px solid #b4b4b4;
+    box-shadow: 0px 20px 30px -20px #050505 , inset 0px -10px 5px -10px #acacac, inset 0px 10px 5px -10px #ffffff ;
     & svg{
-        color: #d3d3d3;
+        color: #c4c4c4;
         width: 80px;
         height: 50px;
     }
