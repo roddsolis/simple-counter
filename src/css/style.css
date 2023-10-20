@@ -24,10 +24,10 @@ body{
     align-items: center;
     justify-content: center;
     color: #1f4347;
-    border-radius: 0.4em;
+    border-radius: 0.3em;
     border: 1px solid #ffffff;
     font-size: 2em;
-    font-family: 'Press Start 2P', sans-serif;    font-weight: 700;
+    font-family: 'DotGothic16', sans-serif;    font-weight: 700;
     box-shadow: inset 0px 0px 8px -1px #808717, inset 0px 0px 5px -1px #282b05 ;
 
     
@@ -35,7 +35,7 @@ body{
 
 .secondsContainer{
     background: linear-gradient(#eeeeee 25%,#d3d3d3 80%, #c4c4c4);
-    border-radius: 1.5em;
+    border-radius: 0.8em;
     padding: 1em;
     display: flex;
     align-items: center;
@@ -43,7 +43,7 @@ body{
     border: 1px solid #b4b4b4;
     box-shadow: 0px 20px 30px -20px #050505 , inset 0px -10px 5px -10px #acacac, inset 0px 10px 5px -10px #ffffff ;
     & svg{
-        color: #c4c4c4;
+        color: #acacac;
         width: 80px;
         height: 50px;
     }

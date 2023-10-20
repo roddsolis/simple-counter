@@ -3,22 +3,21 @@ import React, { useState, useEffect } from "react";
 
 const App = () => {
 
-  const [counter, setCounter] = useState(1); 
+  const [counter, setCounter] = useState(0); 
 
-  useEffect(() => {
-
-    
+  /* useEffect(() => {
     setInterval(() => {
-      setCounter( num => num +1)
+      setCounter( num => num + 1)
     } , 1000);
-
-  }, [])
+ 
+  },[]) */
   
 
+  
   
   return (
     <>
-      <SecondCounter seconds={counter} />
+      <SecondCounter seconds={counter / 2} />
     </>
   );
 };
