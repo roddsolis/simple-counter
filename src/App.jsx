@@ -14,7 +14,7 @@ const App = () => {
   
   return (
     <>
-      <SecondCounter seconds={counter / 2} />
+      <SecondCounter seconds={counter} />
     </>
   );
 };
