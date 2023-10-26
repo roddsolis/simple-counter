@@ -5,15 +5,12 @@ const App = () => {
 
   const [counter, setCounter] = useState(0); 
 
-  /* useEffect(() => {
+  useEffect(() => {
     setInterval(() => {
       setCounter( num => num + 1)
     } , 1000);
  
-  },[]) */
-  
-
-  
+  },[])
   
   return (
     <>
