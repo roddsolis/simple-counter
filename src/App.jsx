@@ -1,20 +1,28 @@
 import SecondCounter from "./components/SecondCounter";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 
 const App = () => {
 
-  const [counter, setCounter] = useState(0); 
+  
+    const [counter, setCounter] = useState(0);
+    const timer = useRef(null);
+  
+    useEffect(() => {
+      timer.current = setInterval(() => {
+        setCounter((prevCounter) => prevCounter + 1);
+      }, 1000);
+  
+      return () => {
+        clearInterval(timer.current);
+      };
+    }, []);
 
-  useEffect(() => {
-    setInterval(() => {
-      setCounter( num => num + 1)
-    } , 1000);
- 
-  },[])
+
   
   return (
     <>
       <SecondCounter seconds={counter} />
+      
     </>
   );
 };
